@@ -1,0 +1,42 @@
+ h1{
+    text-align: center;
+ }
+
+ td{
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    border: 1px #999 solid;
+
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+ }
+
+ table{
+    border-collapse: collapse;
+    border: 2px #666 solid;
+    margin: 0 auto;
+ }
+
+ td.vline{
+    border-left: 2px #666 solid;
+ }
+
+ td.hline{
+    border-top: 2px #666 solid;
+ }
+
+ input{
+    margin: 1px 0 0 0;
+    padding: 0;
+    width: 24px;
+    height: 27px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'lucida handwriting','comic sans ms',cursive;
+    font-size: 19px;
+    color: blue;
+    border: 0px black solid;
+ }
