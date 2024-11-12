@@ -1,26 +1,27 @@
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
-        "header header header"
-        "l-sidebar main r-sidebar"
-        "footer footer footer";
-    grid-gap: 0;
+        "header header"
+        "l-sidebar main"
+        "footer footer";
+    grid-gap: 0px;
     min-height: 100vh;
     padding: 0;
     margin: 0;
+	background-color: rgba(245, 238, 220, 0.5);
 }
 
 header {
-    grid-area: header;
-    /*background-color: #81C1C2;*/
+	grid-area: header;
+    /* background-color: #F89427; */
     padding: 20px;
-    height: 60px;
+    height: 10%;
     text-align: center;
 	font-family:华文行楷,Arial, Helvetica, sans-serif;
- 	font-size:30px;
-    font-weight: bold;
+ 	font-size: 40px;
+    /* font-weight: bold; */
 }
 
 .tip{
@@ -40,21 +41,18 @@ header {
     grid-area: l-sidebar;
     /* background-color: #CADBCF; */
     padding: 20px;
-    width: 5%;
+	/* background-image: url("Jan.gif"); */
+	background-size: cover;
 }
 
-.right-sidebar {
-    grid-area: r-sidebar;
-    /* background-color: #CADBCF; */
-    padding: 20px;
-    width: 5%;
-}
 
 footer {
     grid-area: footer;
     /* background-color: #B3D6C4; */
     padding: 20px;
-    height: 1%;
+    height: 10px;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .month{
@@ -70,10 +68,11 @@ footer {
 	/* padding: 2px 2px 2px; */
 	margin:0;
 	height: 10%;
-	background-color: rgba(118, 207, 165, 0.5);
+	background-color: rgba(159,170,148, 0.5);
 	color: #333;
 	font: 100% 楷体;
 	font-size: 25px;
+	font-weight: bold;
 }
 
 .month td {
@@ -94,8 +93,8 @@ footer {
 }
 
 .month td.active {
-	background-color: #B1CBE1;
-	border: 2px solid #4682B4;
+	background-color: #ecb2bf;
+	border: 2px solid #7a3641;
 }
 
 .month ul {
@@ -113,4 +112,26 @@ footer {
 	width:auto;
 	border:1px #C00 solid;
 	background-color:#C66;
+	font-size:medium;
+}
+
+.month li.festival{
+	background-color: #2d714bb4;
+}
+
+.month a{
+	text-decoration: none;
+	color:#FFF;
+}
+
+.month a:hover{
+	color: #7a3641;
+}
+
+.button a{
+	color: #333;
+	text-decoration: none;
+	border: 1px solid #333;
+	padding: 5px 10px;
+	border-radius: 5px;
 }

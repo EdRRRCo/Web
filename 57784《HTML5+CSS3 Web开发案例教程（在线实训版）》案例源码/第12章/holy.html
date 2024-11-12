@@ -8,12 +8,12 @@
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas:
-        "header header header"
-        "l-sidebar main r-sidebar"
-        "footer footer footer";
-    grid-gap: 1px;
+        "header header"
+        "l-sidebar main"
+        "footer footer";
+    grid-gap: 0px;
     min-height: 100vh;
     padding: 0;
     margin: 0;
@@ -24,18 +24,8 @@ header {
     background-color: #F89427;
     padding: 20px;
     height: 60px;
-    text-align: center;
-	font-family:华文行楷,Arial, Helvetica, sans-serif;
- 	font-size:30px;
-    font-weight: bold;
 }
 
-.tip{
-	align-self: center;
-	font-family: 华文宋体,Arial, Helvetica, sans-serif;
-	font-size:15px;
-	font-weight:lighter;
-}
 
 .main {
     grid-area: main;
@@ -47,14 +37,6 @@ header {
     grid-area: l-sidebar;
     background-color: #EC7272;
     padding: 20px;
-    width: 5%;
-}
-
-.right-sidebar {
-    grid-area: r-sidebar;
-    background-color: #FFEFB2;
-    padding: 20px;
-    width: 5%;
 }
 
 footer {
@@ -64,148 +46,14 @@ footer {
     height: 1%;
 }
 
-.month{
-	border-collapse: collapse;
-	align-self: center;
-    width: 100%;
-    height: 100%;
-}
-
-.month th {
-	border: 1px solid #999;
-	border-bottom: none;
-	padding: 3px 2px 2px;
-	margin:0;
-	height: 10%;
-	background-color: rgb(232, 232, 102);
-	color: #333;
-	font: 80% 楷体;
-}
-
-.month td {
-	border: 1px solid #AAA;
-	font: 12px 楷体;
-	padding: 2px 2px;
-	margin:0;
-	vertical-align: top;
-	height: 18%;
-	}
-
-.month td.previous, .month td.next {
-	background-color: #eee;
-	color: #A6A6A6;
-}
-
-.month td.active {
-	background-color: #B1CBE1;
-	border: 2px solid #4682B4;
-}
-
-.month ul {
-	list-style-type: none;
-	margin: 3px;
-	padding:0;
-}
-
-.month li {
-	color:#FFF;
-    padding:2px;
-	margin-bottom: 6px;
-	height:34px;
-	overflow:hidden;
-	width:auto;
-	border:1px #C00 solid;
-	background-color:#C66;
-}
-  </style>
+</style>
 </head>
 <body class="container">
   <header>
-    <caption>甲辰·龙年 丙寅月
-        <div class="tip">二零二四年正月</div>
-    </caption>
   </header>
   <aside class="left-sidebar"></aside>
   <section class="main">
-    <table class="month">
-        <tr>
-            <th>星期日</th>
-            <th>星期一</th>
-            <th>星期二</th>
-            <th>星期三</th>
-            <th>星期四</th>
-            <th>星期五</th>
-            <th>星期六</th>
-        </tr>
-
-        <tr>
-            <td class="previous">廿五</td>
-            <td class="previous">廿六</td>
-            <td class="previous">廿七</td>
-            <td class="previous">廿八</td>
-            <td class="previous">廿九</td>
-            <td class="previous, active">三十
-                <ul>
-                    <li>除夕</li>
-                </ul>
-            </td>
-            <td class="active">初一
-                <ul>
-                    <li>春节</li>
-                </ul>
-            </td>
-        </tr>
-
-        <tr>
-            <td>初二</td>
-            <td>初三</td>
-            <td>初四</td>
-            <td>初五</td>
-            <td>初六</td>
-            <td>初七</td>
-            <td>初八</td>
-        </tr>
-
-        <tr>
-            <td>初九</td>
-            <td>初十
-                <ul>
-                    <li>雨水</li>
-                </ul>
-            </td>
-            <td>十一</td>
-            <td>十二</td>
-            <td>十三</td>
-            <td>十四</td>
-            <td>十五</td>
-        </tr>
-
-        <tr>
-            <td>十六</td>
-            <td>十七</td>
-            <td>十八</td>
-            <td>十九</td>
-            <td>二十</td>
-            <td>廿一</td>
-            <td>廿二</td>
-        </tr>
-
-        <tr>
-            <td>廿三</td>
-            <td>廿四</td>
-            <td>廿五
-                <ul>
-                    <li>惊蛰</li>
-                </ul>
-            </td>
-            <td>廿六</td>
-            <td>廿七</td>
-            <td>廿八</td>
-            <td>廿九</td>
-        </tr>
-</table>
   </section>
-  <aside class="right-sidebar"></aside>
   <footer>footer</footer>
 </body>
 </html>
