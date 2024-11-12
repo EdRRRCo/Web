@@ -1,5 +1,5 @@
- h1{
-	font-family: 宋体;
+h1{
+	font-family: 隶书;
  } 
  
  .container{
@@ -22,17 +22,21 @@
 	background-color: #63a8c8;
 	padding: 20px;
 	height: 60px;
+	margin-left: 200px;
   }
 
-  list{
-	grid-area: list;
-	text-align: justify;
+  ul li{
+	list-style-type: none;
+	font-family: 隶书;
+	font-size: 20px;
   }
+
 
   .main{
 	grid-area: main;
 	background-color: #ffffff;
 	padding: 20px;
+	margin-left: 200px;
 	justify-items: center;
   }
 
@@ -41,6 +45,9 @@
 	background-color: #ffffff;
 	padding-left: 20px;
 	width: 200px;
+	text-align: right;
+	position: absolute;
+	height: 100%;
   }
 
   .right-sidebar{
@@ -62,12 +69,13 @@
 	align-self: center;
 	border-collapse: collapse;
 	table-layout:fixed;
-	width: 90%;
+	width: 75%;
+	margin-bottom: 60px;
 }
 
 .month caption {
 	text-align: center;
-	font-family: 宋体, arial;
+	font-family:隶书, arial;
  	font-size:20px;
 	font-weight:normal;
 	padding-top: 20px;
@@ -82,12 +90,12 @@
 	margin:0;
 	background-color: #ADD;
 	color: #333;
-	font: 80% 宋体;
+	font: 80% 隶书;
 }
 
 .month td {
 	border: 1px solid #AAA;
-	font: 12px 宋体;
+	font: 12px 隶书;
 	padding: 2px 2px;
 	margin:0;
 	height: 50px;
