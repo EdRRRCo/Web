@@ -17,23 +17,16 @@ header {
 	grid-area: header;
     /* background-color: #F89427; */
     padding: 20px;
-    height: 10%;
+    /* height: 10%; */
     text-align: center;
 	font-family:华文行楷,Arial, Helvetica, sans-serif;
  	font-size: 40px;
     /* font-weight: bold; */
 }
 
-.tip{
-	align-self: center;
-	font-family: 华文宋体,Arial, Helvetica, sans-serif;
-	font-size:15px;
-	font-weight:lighter;
-}
-
 .main {
     grid-area: main;
-    /* background-color: #CADBCF; */
+    background-color: rgba(252, 231, 176, 0.516);
     padding: 0;
 }
 
@@ -68,7 +61,7 @@ footer {
 	/* padding: 2px 2px 2px; */
 	margin:0;
 	height: 10%;
-	background-color: rgba(159,170,148, 0.5);
+	background-color: rgba(171, 149, 121, 0.5);
 	color: #333;
 	font: 100% 楷体;
 	font-size: 25px;
@@ -88,7 +81,7 @@ footer {
 }
 
 .month td.previous, .month td.next {
-	background-color: rgba(238, 238, 238, 0.5);
+	background-color: rgba(190, 191, 115, 0.5);
 	color: #A6A6A6;
 }
 
@@ -112,7 +105,7 @@ footer {
 	width:auto;
 	border:1px #C00 solid;
 	background-color:#C66;
-	font-size:medium;
+	font-size:100%;
 }
 
 .month li.festival{
@@ -134,4 +127,8 @@ footer {
 	border: 1px solid #333;
 	padding: 5px 10px;
 	border-radius: 5px;
+}
+
+.button a:hover{
+	background-color: rgba(190, 191, 115, 0.5);
 }
