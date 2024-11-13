@@ -79,5 +79,13 @@ footer {
     height: 10px;
 	/* display: flex;
 	justify-content: space-evenly; */
+}
+
+footer a{
+    text-decoration: none;
     color: rgba(119, 95, 0, 0.557);
+}
+
+footer a:hover{
+    color: rgb(0, 0, 0);
 }
